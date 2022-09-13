@@ -1,7 +1,7 @@
 /*
  * @Author: C.
  * @Date: 2022-09-13 09:00:14
- * @LastEditTime: 2022-09-13 09:11:12
+ * @LastEditTime: 2022-09-13 11:08:04
  * @Description: file content
  */
 module.exports = {
@@ -18,5 +18,7 @@ module.exports = {
   // 是否使用尾逗号，有三个可选值"<none|es5|all>"
   trailingComma: 'none',
   // 对象大括号直接是否有空格，默认为true，效果：{ foo: bar }
-  bracketSpacing: true
+  bracketSpacing: true,
+  // 检查每一行换行的格式
+  endOfLine: 'auto'
 }
