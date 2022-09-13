@@ -1,3 +1,9 @@
+<!--
+ * @Author: C.
+ * @Date: 2022-09-13 09:00:14
+ * @LastEditTime: 2022-09-13 10:02:05
+ * @Description: file content
+-->
 <script setup lang="ts">
 import { ref, defineProps } from 'vue'
 
@@ -7,7 +13,7 @@ const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>{{ msg }}test</h1>
 
   <p>
     Recommended IDE setup:
