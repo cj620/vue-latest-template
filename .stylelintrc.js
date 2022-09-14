@@ -2,16 +2,17 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-prettier',
-    'stylelint-config-recommended-less',
+    // 'stylelint-config-recommended-less',
     'stylelint-config-standard-vue'
   ],
   plugins: ['stylelint-order'],
   // 不同格式的文件指定自定义语法
   overrides: [
-    {
-      files: ['**/*.(less|css|vue|html)'],
-      customSyntax: 'postcss-less'
-    },
+    // {
+    //   // files: ['**/*.(less|css|vue|html)'],
+    //   files: ['**/*.(css|vue|html)'],
+    //   customSyntax: 'postcss-less'
+    // },
     {
       files: ['**/*.(html|vue)'],
       customSyntax: 'postcss-html'
@@ -20,6 +21,12 @@ module.exports = {
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', '**/*.json', '**/*.md', '**/*.yaml'],
   rules: {
     'no-descending-specificity': null, // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen']
+      }
+    ],
     'selector-pseudo-element-no-unknown': [
       true,
       {

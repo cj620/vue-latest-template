@@ -12,5 +12,10 @@
   // 配置该项，新建文件时默认就是space：2
   "editor.tabSize": 2,
   // stylelint校验的文件格式
-  "stylelint.validate": ["css", "less", "vue", "html"]
+  // "stylelint.validate": ["css", "less", "vue", "html"]，
+  "stylelint.validate": ["css", "vue", "html"],
+  // 禁用所有内置 CSS 验证。这些现在由 Stylelint 处理
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
